@@ -1,0 +1,9 @@
+wMarketID		word	 交易所代码
+wType		word	 商品类型
+wSortCount		word	　排序方式个数
+bSortDatas		vector<SortDatas>	 排序方式组
+subdata SortDatas 2 总排序方式数据结构
+bSortType		byte	 排序方式 见enum PXTypes
+bDirect		byte	 正向/逆向： 0--从小到大， 1--从大到小
+wFrom		word	 开始序号
+wCount		word	每组最大返回的股票数据量（目前是平均分配模式，每组都相同）
